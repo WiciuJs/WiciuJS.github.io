@@ -9,32 +9,34 @@
 </head>
 
 <body>
-    <form>
+    <form action="https://formspree.io/f/moqzejay" METHOD="post">
         <label for="Imie">Imię: </label><br>
-        <input type="text" id="Imie" name="imie"><br>
+        <input type="text" id="Imie" name="imie" required><br>
 
         <label for="nazwisko">Nazwisko: </label><br>
-        <input type="text" id="nazwisko" name="nazwisko"><br><br>
-        <input type="tel" name="tel" placeholder="Numer Telefonu"> <br>
-        <input type="email" name="email" placeholder="Email"> <br><br>
+        <input type="text" id="nazwisko" name="nazwisko"required><br><br>
+        <input type="tel" name="tel" placeholder="Numer Telefonu"required> <br>
+        <input type="email" name="email" placeholder="Email"required> <br><br>
 
         <label for="miasto">Wybór Miasta:</label>
-        <select name="miasto" id="miasto">
+        <select name="miasto" id="miasto" required>
             <option value="Kraków">Kraków</option>
             <option value="Warszawa">Warszawa</option>
             <option value="Gdańsk">Gdańsk</option>
         </select><br><br>
 
 
-        <input type="radio" name="Płeć" value="Kobieta">Kobieta<br>
-        <input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna<br><br>
+        <input type="radio" name="Płeć" value="Kobieta" required>Kobieta<br>
+        <input type="radio" name="Płeć" value="Mężczyzna" required>Mężczyzna<br><br>
 
-        <input type="checkbox" id="zgoda" name="zgoda">
+        <input type="checkbox" id="zgoda" name="zgoda" required>
         <label for="zgoda"> Zgoda na dane osobowe</label><br><br>
 
         <div><label for="wiadomosc">Wiadomości</label></div>
         <div><textarea name="wiadomosc" id="wiadomosc"></textarea></div>
+        <button type="submit">Wyślij</button>
     </form>
+    
 </body>
 
 </html>
