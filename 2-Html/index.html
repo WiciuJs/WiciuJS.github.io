@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <form>
+        <label for="Imie">Imię: </label><br>
+        <input type="text" id="Imie" name="imie"><br>
+
+        <label for="nazwisko">Nazwisko: </label><br>
+        <input type="text" id="nazwisko" name="nazwisko"><br><br>
+        <input type="tel" name="tel" placeholder="Numer Telefonu"> <br>
+        <input type="email" name="email" placeholder="Email"> <br><br>
+
+        <label for="miasto">Wybór Miasta:</label>
+        <select name="miasto" id="miasto">
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br><br>
+
+
+        <input type="radio" name="Płeć" value="Kobieta">Kobieta<br>
+        <input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna<br><br>
+
+        <input type="checkbox" id="zgoda" name="zgoda">
+        <label for="zgoda"> Zgoda na dane osobowe</label><br><br>
+
+        <div><label for="wiadomosc">Wiadomości</label></div>
+        <div><textarea name="wiadomosc" id="wiadomosc"></textarea></div>
+    </form>
+</body>
+
+</html>
