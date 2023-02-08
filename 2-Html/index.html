@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <form action="https://formspree.io/f/moqzejay" METHOD="post">
-        <label for="Imie">Imię: </label><br>
-        <input type="text" id="Imie" name="imie" required><br>
+    <form action="https://formspree.io/f/moqzejay" method="post">
+        <label for="imie">Imię: </label><br>
+        <input type="text" id="imie" name="imie" required><br>
 
         <label for="nazwisko">Nazwisko: </label><br>
-        <input type="text" id="nazwisko" name="nazwisko"required><br><br>
-        <input type="tel" name="tel" placeholder="Numer Telefonu"required> <br>
-        <input type="email" name="email" placeholder="Email"required> <br><br>
+        <input type="text" id="nazwisko" name="nazwisko" required><br><br>
+        <input type="tel" name="tel" placeholder="Numer Telefonu" required> <br>
+        <input type="email" name="email" placeholder="Email" required> <br><br>
 
         <label for="miasto">Wybór Miasta:</label>
         <select name="miasto" id="miasto" required>
@@ -25,9 +25,13 @@
             <option value="Gdańsk">Gdańsk</option>
         </select><br><br>
 
+        <label>
+            <input type="radio" name="plec" value="Kobieta" required> Kobieta<br>
+        </label>
 
-        <input type="radio" name="Płeć" value="Kobieta" required>Kobieta<br>
-        <input type="radio" name="Płeć" value="Mężczyzna" required>Mężczyzna<br><br>
+        <label>
+            <input type="radio" name="plec" value="Mężczyzna" required>Mężczyzna<br><br>
+        </label>
 
         <input type="checkbox" id="zgoda" name="zgoda" required>
         <label for="zgoda"> Zgoda na dane osobowe</label><br><br>
@@ -36,7 +40,16 @@
         <div><textarea name="wiadomosc" id="wiadomosc"></textarea></div>
         <button type="submit">Wyślij</button>
     </form>
+
+
+<!--     <?php
+    $to = "mail@wp.pl";
+    $subject = "";
+    $txt = "Nowy formularz";
+    $headers = "From: " . "\r\n" .
     
+    mail($to,$subject,$txt,$headers);
+    ?> -->
 </body>
 
 </html>
