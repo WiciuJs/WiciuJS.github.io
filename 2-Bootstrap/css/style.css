@@ -1,0 +1,25 @@
+.wrap {
+    height: 34.5rem;
+    background: #0006ff;
+    padding: 1rem;
+    margin-top: 10rem;
+    background: #fefcfe;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.head-font {
+    font-size: 1.5rem;
+    color: #88888a;
+}
+
+.btn-link {
+    color: #d5b393;
+}
+
+.btn-link:hover {
+    color: #b6bfbf;
+}
+
